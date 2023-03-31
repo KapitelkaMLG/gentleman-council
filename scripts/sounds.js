@@ -24,7 +24,7 @@ function loadSound(name) {
   var request = new XMLHttpRequest();
 
   request.open('GET', url, true);
-  request.responseType = 'arrayBuffer';
+  request.responseType = 'arraybuffer';
 
   request.onload = function() {
     soundContext.decodeAudioData(request.response, function(newBuffer) {
