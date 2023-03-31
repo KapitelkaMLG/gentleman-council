@@ -7,6 +7,9 @@ var sounds = {
   },
   "nahui" : {
     url : "sounds/nahui.mp3"
+  },
+  "boom" : {
+    url : "sounds/boom.mp3"
   }
 };
 

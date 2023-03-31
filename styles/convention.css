@@ -31,7 +31,13 @@ h1 {
 }
 
 a {
-  color: #111199;
+  text-decoration: none;
+  color: #3333399;
+}
+
+a.sound {
+  text-decoration: none;
+  color: #333377;
 }
 
 img.signature {
