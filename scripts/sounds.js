@@ -10,6 +10,9 @@ var sounds = {
   },
   "boom" : {
     url : "sounds/boom.mp3"
+  },
+  "amogus" : {
+    url : "sounds/amogus.mp3"
   }
 };
 
