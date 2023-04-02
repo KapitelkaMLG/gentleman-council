@@ -13,6 +13,9 @@ var sounds = {
   },
   "amogus" : {
     url : "sounds/amogus.mp3"
+  },
+  "midas" : {
+    url : "sounds/midas.mp3"
   }
 };
 
