@@ -70,3 +70,27 @@ img.fire {
   height: 150px;
 }
 
+div.hakahyhe {
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  text-align: center;
+  background-color: #111111;
+}
+
+div.hakahyhe img {
+  width: 100px;
+  height: 100px;
+};
+
+div.hakahyhe a:link {
+  text-decoration: none;
+  color: #FFCCCC;
+}
+
+div.hakahyhe a:visited {
+  text-decoration: none;
+  color: #FFCCCC;
+}
+
