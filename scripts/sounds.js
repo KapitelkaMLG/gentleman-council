@@ -16,6 +16,9 @@ var sounds = {
   },
   "midas" : {
     url : "sounds/midas.mp3"
+  },
+  "hah" : {
+    url : "sounds/hah.mp3"
   }
 };
 
