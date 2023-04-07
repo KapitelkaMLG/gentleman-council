@@ -19,6 +19,12 @@ var sounds = {
   },
   "hah" : {
     url : "sounds/hah.mp3"
+  },
+  "volchok" : {
+    url : "sounds/volchok.mp3"
+  },
+  "gachigasm" : {
+    url : "sounds/gachigasm.mp3"
   }
 };
 
