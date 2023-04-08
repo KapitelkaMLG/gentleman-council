@@ -1,0 +1,3 @@
+baseURL = 'http://example.org/'
+languageCode = 'ru-ru'
+title = 'Совет Джентльменов'
