@@ -4,16 +4,17 @@ body {
   justify-content: center;
   margin: 0 auto;
   margin-top: 100px;
-  background-image: url('https://media.tenor.com/brlIhh4QroIAAAAd/venom-treasure-island.gif');
+  background-image: url('https://media.tenor.com/B1pkleO44XEAAAAC/%D0%B4%D0%B0%D1%82%D1%8B%D1%87%D0%B5-touches.gif');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
 }
 
-div.slots {
+div.games {
   background-color: #DDDDDD;
   width: 64em;
   padding: 20px;
+  padding-bottom: 100px;
   border: 2px solid #111111;
   font-size: 25px;
   font-style: italic;

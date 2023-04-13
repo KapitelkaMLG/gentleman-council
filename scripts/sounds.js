@@ -25,6 +25,9 @@ var sounds = {
   },
   "gachigasm" : {
     url : "sounds/gachigasm.mp3"
+  },
+  "mama" : {
+    url : "sounds/mama.mp3"
   }
 };
 
