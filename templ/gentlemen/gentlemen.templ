@@ -1,0 +1,27 @@
+package gentlemen
+
+type Gentleman struct {
+	Name string `json: name`
+	Link string `json: link`
+	Signature string `json: signature`
+	Sound string `json: "sound, omitempty"`
+}
+
+templ GentlemenComp(gentlemenData []Gentleman) {
+	<div class="gentlemen">
+		<h1>Список Джентельменов</h1>
+		for _, gentleman := range gentlemenData {
+		<p class="signature">
+			<a href={ templ.SafeURL(gentleman.Link) }>{ gentleman.Name }</a>
+			if gentleman.Sound != "" {
+			<a class="sound" href="#" onclick="playSound({ gentleman.Sound });">
+				<img class="signature" src={ gentleman.Signature } />
+			</a>
+			} else {
+			<img class="signature" src={ gentleman.Signature } />
+			}
+		</p>
+		}
+	</div>
+}
+
