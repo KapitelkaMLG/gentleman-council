@@ -25,6 +25,5 @@ go.work.sum
 .env
 
 # Templ generated
-*_templ.go
 public/*.html
 
