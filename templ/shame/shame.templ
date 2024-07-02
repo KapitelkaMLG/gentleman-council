@@ -1,0 +1,30 @@
+package shame
+
+type Shame struct {
+	Name string `json: name`
+	Link string `json: link`
+	Color string `json: "color, omitempty"`
+	Sound string `json: "sound, omitempty"`
+}
+
+templ ShameComp(shameData []Shame) {
+	<div class="shame">
+		<h1>Доска Позора</h1>
+		for _, shame := range shameData {
+			<p>
+				<a href={ templ.SafeURL(shame.Link) }
+				if shame.Sound != "" {
+					onclick="playSound({ shame.Sound })"
+				}
+				if shame.Color != "" {
+					style="color: { shame.Color }"
+				}
+				>
+				{ shame.Name }
+				</a>
+			</p>
+		}
+	</div>
+	<img class="fire" src="images/fire.gif" />
+}
+

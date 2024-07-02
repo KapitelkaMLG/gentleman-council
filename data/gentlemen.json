@@ -1,0 +1,47 @@
+[
+	{
+		"name": "KapitelkaMLG",
+		"link": "https://twitch.tv/KapitelkaMLG",
+		"sound": "boom",
+		"signature": "images/KapitelkaMLG_signature.png"
+	},
+	{
+		"name": "joklum_228",
+		"link": "https://twitch.tv/joklum_228",
+		"signature": "images/joklum_228_signature.png"
+	},
+	{
+		"name": "Saetis",
+		"link": "https://twitch.tv/Saetis",
+		"signature": "images/Saetis_signature.jpg"
+	},
+	{
+		"name": "doomchanich",
+		"link": "https://twitch.tv/doomchanich",
+		"signature": "images/doomchanich_signature.png"
+	},
+	{
+		"name": "VanitasForu",
+		"link": "https://twitch.tv/VanitasForu",
+		"signature": "images/VanitasForu_signature.png"
+	},
+	{
+		"name": "SanguraXD",
+		"link": "https://twitch.tv/SanguraXD",
+		"sound": "amogus",
+		"signature": "images/SanguraXD_signature.png"
+	},
+	{
+		"name": "Hinomoru",
+		"link": "https://twitch.tv/Hinomoru",
+		"sound": "volchok",
+		"signature": "images/Hinomoru_signature.png"
+	},
+	{
+		"name": "truemabadi",
+		"link": "https://twitch.tv/truemabadi",
+		"sound": "gachigasm",
+		"signature": "images/truemabadi_signature.gif"
+	}
+]
+

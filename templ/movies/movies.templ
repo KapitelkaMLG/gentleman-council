@@ -1,0 +1,47 @@
+package movies
+
+type Movie struct {
+	Name string `json: name`
+	Link string `json: "link, omitempty"`
+	Rating string `json: rating`
+	Comment string `json: comment`
+}
+
+templ MoviesComp(moviesData []Movie) {
+	<div class="movies">
+		<h1>Правила кино аука</h1>
+		<ol>
+			<li>Никаких произведений, от ворнарев, дисней, нетфликс. (короче мы против DMCA)</li>
+			<li>Никаких произведений с отметкой 18 +</li>
+			<li>Ничего страшного!!! и потенциально страшных фильмов</li>
+			<li>Никакой эротики, сцен жестокости и тп</li>
+			<li>Фильм не дольше 2 часов или на усмотрение <a href="https://twitch.tv/HakaHyHe">Накануне</a></li>
+			<li>Если заказали серийники, то их просмотр закончится в рамках 2 часов</li>
+			<li>Аукцион выкупается за 2 к</li>
+			<li>произведение старше 2 лет</li>
+			<li>Видео от 30 минут</li>
+		</ol>
+		<p>Старые диснейновские мультики можно.</p>
+		<p>Всегда можно о чем-то спросить и уточнить у стримера, чтобы избежать недопонимания.</p>
+		<h1>Бывшие Слоты</h1>
+		<table>
+			<tr>
+				<th>Название</th>
+				<th>Оценка</th>
+				<th>Комментарий <a href="https://twitch.tv/HakaHyHe">HakaHyHe</a></th>
+			</tr>
+			for _, movie := range moviesData {
+			<tr>
+				if movie.Link != "" {
+				<td><a href={ templ.SafeURL(movie.Link) }>{ movie.Name }</a></td>
+				} else {
+				<td>{ movie.Name }</td>
+				}
+				<td>{ movie.Rating }</td>
+				<td>{ movie.Comment }</td>
+			</tr>
+			}
+		</table>
+	</div>
+}
+
