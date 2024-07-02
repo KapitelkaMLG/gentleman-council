@@ -38,12 +38,6 @@ jobs:
         with:
           go-version: 1.16
 
-      - name: Install Templ
-        run: go install github.com/a-h/templ/cmd/templ@latest
-
-      - name: Generate from templs 
-        run: templ generate
-
       - name: Get build dependencies
         run: go get github.com/a-h/templ
 
