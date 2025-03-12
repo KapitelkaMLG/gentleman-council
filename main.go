@@ -8,12 +8,12 @@ import (
 
 	"github.com/kapitelkamlg/gentleman-council/templ/base"
 	"github.com/kapitelkamlg/gentleman-council/templ/footer"
-	"github.com/kapitelkamlg/gentleman-council/templ/index"
+	"github.com/kapitelkamlg/gentleman-council/templ/games"
 	"github.com/kapitelkamlg/gentleman-council/templ/gentlemen"
+	"github.com/kapitelkamlg/gentleman-council/templ/index"
+	"github.com/kapitelkamlg/gentleman-council/templ/movies"
 	"github.com/kapitelkamlg/gentleman-council/templ/shame"
 	"github.com/kapitelkamlg/gentleman-council/templ/sheikh"
-	"github.com/kapitelkamlg/gentleman-council/templ/movies"
-	"github.com/kapitelkamlg/gentleman-council/templ/games"
 )
 
 func main() {
@@ -23,33 +23,33 @@ func main() {
 	sheikhFile := "data/sheikh.json"
 	moviesFile := "data/movies.json"
 	gamesFile := "data/games.json"
-	
-	pages := []footer.Page {
+
+	pages := []footer.Page{
 		{
-			Name: "index",
+			Name:  "index",
 			Title: "Джентельменское соглашение",
 		},
 		{
-			Name: "gentlemen",
+			Name:  "gentlemen",
 			Title: "Джентельмены",
 		},
 		{
-			Name: "shame",
+			Name:  "shame",
 			Title: "Доска Позора",
 		},
 		{
-			Name: "sheikh",
+			Name:  "sheikh",
 			Title: "Шейхи",
 		},
 		{
-			Name: "movies",
+			Name:  "movies",
 			Title: "Киноаук",
 		},
 		{
-			Name: "games",
+			Name:  "games",
 			Title: "Игроаук",
 		},
-	}	
+	}
 	RenderIndexPage(outDir, pages)
 	RenderGentlemenPage(outDir, pages, gentlemenFile)
 	RenderShamePage(outDir, pages, shameFile)
@@ -191,4 +191,3 @@ func GetPageByName(pages []footer.Page, name string) *footer.Page {
 	}
 	return nil
 }
-

@@ -1,35 +1,37 @@
 package base
 
 templ BaseComp(name string, title string, body templ.Component, footer templ.Component) {
-	<!DOCTYPE html>
-	<html lang="ru">
-		<head>
-			<title>{ title }</title>
-			<meta charset="utf-8" />
-			<link rel="icon" type="image/x-icon" href="images/favicon.jpg" />
-			<link rel="stylesheet" type="text/css" href={ "styles/" + name + ".css" } />
-			<script src="scripts/sounds.js" type="text/javascript" />
-		</head>
-		<body>
-			@body
-			@footer
-			<div class="hakahyhe">
-				<a href="#" onclick="playSound('mama', { volume: .2 });">
-					<img src="images/hakahyhe.png" />
-					<p>HakaHyHe</p>
-				</a>
-				<p>
-					<a href="https://twitch.tv/HakaHyHe">
-						<img src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/twitch-512.png" />
-					</a>
-				</p>
-				<p>
-					<a href="https://t.me/hakahyheTV">
-						<img src="https://cdn.iconscout.com/icon/free/png-512/telegram-1754812-1490132.png?f=avif&w=256" />
-					</a>
-				</p>
-			</div>
-		</body>
-	</html>
-}
+<!DOCTYPE html>
+<html lang="ru">
 
+<head>
+	<title>{ title }</title>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/x-icon" href="images/favicon.jpg" />
+	<link rel="stylesheet" type="text/css" href={ "styles/" + name + ".css" } />
+	<script src="scripts/sounds.js" type="text/javascript"></script>
+</head>
+
+<body>
+	@body
+	@footer
+	<div class="hakahyhe">
+		<a href="#" onclick="playSound('mama', { volume: .2 });">
+			<img src="images/hakahyhe.png" />
+			<p>HakaHyHe</p>
+		</a>
+		<p>
+			<a href="https://twitch.tv/HakaHyHe">
+				<img src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/twitch-512.png" />
+			</a>
+		</p>
+		<p>
+			<a href="https://t.me/hakahyheTV">
+				<img src="https://cdn.iconscout.com/icon/free/png-512/telegram-1754812-1490132.png?f=avif&w=256" />
+			</a>
+		</p>
+	</div>
+</body>
+
+</html>
+}

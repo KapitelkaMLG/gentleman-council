@@ -1,13 +1,12 @@
 package sheikh
 
 templ SheikhComp(sheikhData []string) {
-	<div class="sheikh">
-		<a class="sound" href="#" onclick="playSound('midas', { volume: .2 });">
-			<h1>Список Шейхов</h1>
-			for _, sheikh := range sheikhData {
-			<p>{ sheikh }</p>
-			}
-		</a>
-	</div> 
+<div class="sheikh">
+	<a class="sound" href="#" onclick="playSound('midas', { volume: .2 });">
+		<h1>Список Шейхов</h1>
+		for _, sheikh := range sheikhData {
+		<p>{ sheikh }</p>
+		}
+	</a>
+</div>
 }
-
